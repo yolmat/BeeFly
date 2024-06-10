@@ -163,7 +163,7 @@ public class BeeFly extends JPanel implements ActionListener, KeyListener {
                 pipe.passed = true;
             }
 
-            // Apos colizão gameOver
+            // Apos colisão gameOver
             if (collision(bee, pipe)) {
                 gameOver = true;
             }
@@ -174,7 +174,7 @@ public class BeeFly extends JPanel implements ActionListener, KeyListener {
         }
     }
 
-    // Identifica colizão
+    // Identifica colisão
     boolean collision(Bee a, Pipe b) {
         return beeX < b.x + b.width &&
                 beeX + beeWidth > b.x &&
